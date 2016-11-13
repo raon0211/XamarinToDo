@@ -1,0 +1,6 @@
+.vs/
+bin/
+packages/
+obj/
+*.log
+/Now.Droid.Bindings/Additions

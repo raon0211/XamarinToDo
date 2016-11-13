@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/colorPrimary"
+    android:titleTextColor="@color/white"
+    android:id="@+id/toolbar_list"
+    android:theme="@style/AppToolbarTheme"/>
+
+  <MvvmCross.Binding.Droid.Views.MvxListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:MvxBind="ItemsSource Items"
+        app:MvxItemTemplate="@layout/item_todoitem"
+        android:divider="#00000000"
+        android:background="@drawable/border_bottom" />
+</LinearLayout>

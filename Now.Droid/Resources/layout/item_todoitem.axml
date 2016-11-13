@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+  <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/remove_red"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                app:MvxBind="Click DeleteClick">
+    <ImageView
+        android:src="@drawable/trash_can"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+    <TextView
+        android:text="@string/remove"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center_vertical"/>
+  </LinearLayout>
+
+  <LinearLayout android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <CheckBox android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical" 
+              app:MvxBind="Checked Item.Completed; Click CheckboxClick"
+              android:layout_marginLeft="10dp"
+              android:enabled="true"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginLeft="5dp"
+                  android:background="@drawable/border_bottom">
+      <TextView
+        app:MvxBind="Text Item.Text"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center_vertical"
+        />
+    </LinearLayout>
+  </LinearLayout>
+    
+</com.daimajia.swipe.SwipeLayout>

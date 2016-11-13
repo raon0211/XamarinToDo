@@ -1,0 +1,3 @@
+<metadata>
+  <remove-node path="/api/package[@name='com.daimajia.swipe.adapters']/class[@name='RecyclerSwipeAdapter']" />
+</metadata>
